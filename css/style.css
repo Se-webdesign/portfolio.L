@@ -1,0 +1,544 @@
+* {
+  font-family: "Noto Sans CJK JP";
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  color: #000;
+  font-weight: bold;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#main header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 3;
+}
+
+#main header p {
+  width: 30%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#main header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 60%;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+
+#main header .sp {
+  display: none;
+}
+
+#main .top {
+  width: 100%;
+  padding-top: 70px;
+  position: relative;
+  height: 700px;
+  z-index: 0;
+}
+
+#main .top p {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+  margin: 15px 0;
+}
+
+#main .top .bt {
+  text-align: center;
+}
+
+#main .top .bt a {
+  font-size: 2rem;
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: #00a8ff;
+  border: solid 2px #00a8ff;
+  border-radius: 3px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+#main .top .bt a:hover {
+  background: #00a8ff;
+  color: white;
+}
+
+#main .top .ohayo {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 60%;
+}
+
+#main .top .lose {
+  position: absolute;
+  top: 45%;
+  left: 60%;
+  width: 40%;
+  z-index: 1;
+}
+
+#main .top .nature {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  z-index: 1;
+  width: 40%;
+}
+
+#main .profile {
+  width: 100%;
+  height: 700px;
+  padding-top: 70px;
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00a8ff), to(#fff));
+  background: linear-gradient(#00a8ff, #fff);
+}
+
+#main .profile .title p {
+  color: #fff;
+}
+
+#main .profile .wrapper {
+  max-width: 700px;
+  width: 100%;
+  margin: auto;
+  margin-top: 40px;
+  position: relative;
+}
+
+#main .profile .wrapper ul {
+  width: 95%;
+  height: 500px;
+  margin: auto;
+  padding: 1rem;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main .profile .wrapper ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+#main .profile .wrapper ul li .left {
+  width: 40%;
+}
+
+#main .profile .wrapper ul li .right {
+  width: 60%;
+  font-weight: normal;
+}
+
+#main .profile .wrapper ul li .right a {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+#main .profile .wrapper ul li .right a:hover {
+  opacity: 0.7;
+}
+
+#main .profile .wrapper ul li p {
+  font-size: 1.5rem;
+  border: 1px solid #333;
+  padding: 0.2rem 0;
+  padding-left: 1rem;
+}
+
+#main .profile .wrapper img {
+  position: absolute;
+  margin: auto;
+  width: 500px;
+  height: 500px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  z-index: 0;
+}
+
+#main .content {
+  padding-top: 70px;
+  position: relative;
+}
+
+#main .content .title p {
+  color: #000;
+}
+
+#main .content .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main .content .wrapper .left {
+  width: 40%;
+  margin-left: 10%;
+}
+
+#main .content .wrapper .left img {
+  width: 100%;
+}
+
+#main .content .wrapper .right {
+  width: 40%;
+  height: auto;
+  margin-left: 5%;
+  background: rgba(0, 0, 0, 0);
+  padding: 1rem;
+  border: 3px solid #fff;
+  border-radius: 10%;
+}
+
+#main .content .wrapper .right .container {
+  margin: 1rem;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 10%;
+}
+
+#main .content .wrapper .right .container span {
+  color: red;
+}
+
+#main .content .wrapper .right .t {
+  height: auto;
+}
+
+#main .content .wrapper .right .t p {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+#main .content .wrapper .right .b {
+  margin-top: 1.2rem;
+}
+
+#main .content .wrapper .right .b h1 {
+  font-size: 1.8rem;
+  color: #333;
+  border-bottom: 2px solid #333;
+}
+
+#main .content .wrapper .right .b p {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+#main .content .wrapper .right .b p .br {
+  margin-left: 1.5rem;
+}
+
+#main .content .wrapper .right p {
+  color: #333;
+}
+
+#main .title {
+  text-align: center;
+  height: 80px;
+}
+
+#main .title p {
+  font-size: 2rem;
+}
+
+#main .qa {
+  width: 100%;
+  padding-top: 70px;
+}
+
+#main .qa .wrapper {
+  max-width: 700px;
+  width: 100%;
+  margin: auto;
+  margin-top: 40px;
+}
+
+#main .qa .wrapper ul {
+  width: 100%;
+  margin: auto;
+}
+
+#main .qa .wrapper ul li {
+  border-bottom: 2px solid #333;
+  padding: 0 2rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+#main .qa .wrapper ul li p {
+  font-size: 2rem;
+  width: auto;
+}
+
+#main .qa .wrapper ul li .q {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#main .qa .wrapper ul li .q span {
+  color: #00a8ff;
+}
+
+#main .qa .wrapper ul li .q .btn {
+  border: none;
+  background: #fff;
+  font-size: 2rem;
+  text-align: right;
+  width: auto;
+}
+
+#main .qa .wrapper ul li .q .btn:hover {
+  opacity: 0.5;
+}
+
+#main .qa .wrapper ul li .q .close {
+  display: none;
+}
+
+#main .qa .wrapper ul li .answer {
+  display: none;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+#main .qa .wrapper ul li .answer span {
+  color: red;
+}
+
+#main .contact {
+  padding-top: 70px;
+}
+
+#main .contact .wrapper {
+  width: 100%;
+  margin-top: 40px;
+  height: 400px;
+  position: relative;
+}
+
+#main .contact .wrapper .caution {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#main .contact .wrapper .caution p {
+  color: red;
+}
+
+#main .contact .wrapper form {
+  max-width: 700px;
+  width: 60%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+}
+
+#main .contact .wrapper form .input {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+#main .contact .wrapper form .textarea {
+  font-size: 1.5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  height: 200px;
+}
+
+#main .contact .wrapper form p {
+  color: #c0c0c0;
+  border: 2px solid #333;
+  background: #fff;
+}
+
+#main .contact .wrapper form .done {
+  width: 60%;
+  height: 50px;
+}
+
+#main .contact .wrapper #rain {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  top: -100%;
+  z-index: -1;
+}
+
+#main .contact .wrapper .popup {
+  display: none;
+  position: absolute;
+  max-width: 700px;
+  width: 40%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  padding: 1rem;
+  border: 2px solid #000;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+#main .hover {
+  position: relative;
+  display: inline-block;
+}
+
+#main .hover::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #333;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+#main .hover:hover::after {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+#main footer {
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00a8ff), color-stop(#40738E), to(#59727F));
+  background: linear-gradient(#00a8ff, #40738E, #59727F);
+  height: 300px;
+}
+
+#main footer ul {
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+}
+
+#main footer ul li {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+#main footer ul li a {
+  color: #fff;
+}
+
+#main footer ul li .hover {
+  position: relative;
+  display: inline-block;
+}
+
+#main footer ul li .hover::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+#main footer ul li .hover:hover::after {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+/*# sourceMappingURL=style.css.map */
