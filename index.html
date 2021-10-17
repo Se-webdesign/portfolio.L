@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Dbar">
+  <title>Se｜Webデザイン</title>
+  <!-- <link rel="icon" type="image/x-icon" href="img/favicons/favicon.ico"> -->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/move.css" rel="stylesheet" type="text/css">
+  <link href="css/responsive.css" rel="stylesheet" type="text/css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/jquery.ripples-min.js"></script>
+  <script src="js/style.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/jquery.wavify.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/raindrops.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+  
+</head>
+<body>
+  <!-- <div id="load">
+    <div class="load">
+      <div class="item item1"></div>
+      <div class="item item2"></div>
+      <div class="item item3"></div>
+      <div class="item item4"></div>
+      <div class="item item5"></div>
+      <div class="item item6"></div>
+      <div class="item item7"></div>
+      <div class="item item8"></div>
+      <div class="item item9"></div>
+    </div>
+  </div> -->
+
+  <div id="main">
+    <header id="header">
+      <p>Se.Web<span class="br"></span>デザイン</p>
+      <div class="sp">
+        <button id="open">≡</button>
+        <ul class="sp-header">
+          <li class="batu"><button id="close" class="c">×</button></li>
+          <li><a class="hover c" href="#top">TOP</a></li>
+          <li><a class="hover c" href="#profile">PROFILE</a></li>
+          <li><a class="hover c" href="#content">CONTENT</a></li>
+          <li><a class="hover c" href="#qa">Q & A</a></li>
+          <li><a class="hover c" href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+      <ul class="normal">
+        <li><a class="hover" href="#top">TOP</a></li>
+        <li><a class="hover" href="#profile">PROFILE</a></li>
+        <li><a class="hover" href="#content">CONTENT</a></li>
+        <li><a class="hover" href="#qa">Q & A</a></li>
+        <li><a class="hover" href="#contact">CONTACT</a></li>
+      </ul>
+    </header>
+
+    <div id="#top" class="top">
+      <p>HP・LP<span class="br"></span>制作いたします</p>
+      <div class="bt">
+        <a href="#contact">今すぐお問い合わせ</a>
+      </div>
+      <img class="ohayo fadeUp" src="img/top.png">
+      <img class="nature fadeUp" src="img/top2.png">
+      <img class="lose fadeUp" src="img/top3.png">
+    </div>
+
+    <div id="profile" class="profile">
+      <div class="title">
+        <p>PROFILE</p>
+        <p>プロフィール</p>
+      </div>
+
+      <div class="wrapper">
+        <ul class="fade delay">
+          <li><p class="left">名前</p><p class="right">seita.u</p></li>
+          <li><p class="left">経歴</p><p class="right">2019年からhtml等を使用し現在までwebサイトのデザイン・制作を行う。</p></li>
+          <li><p class="left">使用可能言語</p><p class="right">HTML・CSS・JavaScript・jQuery・PHP</p></li>
+          <li><p class="left">使用ソフト</p><p class="right">VisualStudioCode・Figma・GIMP</p></li>
+          <li><p class="left">クラウドソーシング<br>サービス</p><p class="right"><a href="https://www.lancers.jp/profile/seita_u65?ref=header_menu" target="_blank" rel="noopener noreferrer">Lancers/<br>ランサーズ</a></p></li>
+        </ul>
+        <img src="img/darumatouka.png">
+      </div>
+      <svg version="1.1"><path id="wave" d=""/></svg>
+    </div>
+
+    <div id="content" class="content">
+      <div class="title">
+        <p>CONTENT</p>
+        <p>業務内容</p>
+      </div>
+      <div class="wrapper">
+        <div class="left fade delay">
+          <img src="img/pc.png">
+        </div>
+        <div class="right fade">
+          <div class="container">
+            <div class="t">
+              <p>HP・LP作成</p>
+              <p>wordpressによるブログ作成</p>
+            </div>
+            <div class="b">
+              <h1>その他対応可能範囲</h1>
+              <p>・HTML/CSSコーディング</p>
+              <p>・JavaScript/jQueryによる<br><span class="br">アニメーション実装</span></p>
+              <p>・レスポンシブ化による<span>PC・スマホ対応</span></p>
+              <p>・SEO内部対策</p>
+              <p>・figmaによるデザイン</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <canvas class="bubble"></canvas>
+      
+    </div>
+
+    <div id="qa" class="qa">
+      <div class="title">
+        <p>Q & A</p>
+        <p>よくある質問</p>
+      </div>
+
+      <div class="wrapper">
+        <ul>
+          <li>
+            <div class="q">
+              <p><span>Q.</span>見積もりだけもらえますか？</p>
+              <button id="o1" class="open btn">+</button>
+              <button id="c1" class="close btn">-</button>
+            </div>
+            <p id="a1" class="answer"><span>A.</span>はい。ご連絡いただければすぐにお見積もりを提出させていただきます。<br>確認していただきご依頼ください。<br>また、値段交渉も可能ですのでお気軽にご相談ください。</p>
+          </li>
+          <li>
+            <div class="q">
+              <p><span>Q.</span>写真などの素材がないんですが用意できますか？</p>
+              <button id="o2" class="open btn">+</button>
+              <button id="c2" class="close btn" >-</button>
+            </div>
+            <p id="a2" class="answer"><span>A.</span>はい。こちらで用意できます。<br>参考URLから選ぶことができますのでお気軽にご相談ください。<br>また、全てお任せでの制作も可能です。</p>
+          </li>
+          <li>
+            <div class="q">
+              <p><span>Q.</span>コーティング完成後の修正は可能ですか？</p>
+              <button id="o3" class="open btn">+</button>
+              <button id="c3" class="close btn">-</button>
+            </div>
+            <p id="a3" class="answer"><span>A.</span>はい。デザイン時はもちろん、コーティング完了後も修正いたしますのでお気軽にご連絡ください。</p>
+          </li>
+          <li>
+            <div class="q">
+              <p><span>Q.</span>納品後のサポートは受けられますか？</p>
+              <button id="o4" class="open btn">+</button>
+              <button id="c4" class="close btn">-</button>
+            </div>
+            <div id="a4" class="answer">
+              <p><span>A.</span>はい。納品後に運用していく中で不明点や修正点などありましたら対応いたしますのでご連絡ください。<br>運用するのに不安がある方は納品後に運用マニュアルを制作しお渡しさせていただいております。<br>また、こちらで運用していくことも可能ですのでお気軽にご相談ください。</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="contact" class="contact">
+      <div class="title">
+        <p>CONTACT</p>
+        <p>お問い合わせ</p>
+      </div>
+      <div class="wrapper">
+        <div class="caution">
+          <p>ポートフォリオ用のためお問い合わせ機能はついていません。</p>
+          <p>お問い合わせについては各クラウドソーシングサービスからお願いいたします。</p>
+        </div>
+        <form method="POST" action="index.php" onsubmit="return confirm()">
+          <!-- <input placeholder="Name/お名前"type="text" name="name">
+          <input placeholder="Mail/メールアドレス" type="text" name="mail">
+          <textarea placeholder="Message/お問い合わせ内容" name="question"></textarea>
+           -->
+          <p class="input">Name/お名前</p>
+          <p class="input">Mail/メールアドレス</p>
+          <p class="textarea">Message/お問い合わせ内容</p>
+          <input class="done" type="submit" value="問い合わせる" onclick="return confirm()">
+        </form>
+        <div id="popup" class="popup">
+          <!-- <p><?php echo $_POST["name"]; ?></p>
+            <p><?php echo $_POST["mail"]; ?></p>
+            <p><?php echo $_POST["question"]; ?></p> -->
+            問い合わせますか？<br />
+            <button id="ok" onclick="okfunc()">OK</button>
+            <button id="no" onclick="nofunc()">キャンセル</button>
+          </div>
+          <div id="done" class="popup">
+            <p>お問い合わせありがとうございました。</p>
+            <button id="ok" onclick="donefunc()">OK</button>
+          </div>
+          <div id="rain">
+          </div>
+      </div>
+    </div>
+
+    <footer>
+      <ul>
+        <li><a class="hover" href="#top">TOP</a></li>
+        <li><a class="hover" href="#profile">PROFILE</a></li>
+        <li><a class="hover" href="#content">CONTENT</a></li>
+        <li><a class="hover" href="#qa">Q & A</a></li>
+        <li><a class="hover" href="#contact">CONTACT</a></li>
+      </ul>
+    </footer>
+  </div>
+
+</body>
+</html>
