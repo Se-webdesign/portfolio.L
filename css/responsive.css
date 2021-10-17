@@ -1,0 +1,185 @@
+@media screen and (max-width: 1024px) {
+  #main header p {
+    font-size: 1.8rem;
+  }
+  #main header ul {
+    font-size: 1rem;
+  }
+  #main .content .wrapper {
+    position: relative;
+  }
+  #main .content .wrapper .left {
+    margin-left: 1rem;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    z-index: 0;
+  }
+  #main .content .wrapper .right {
+    width: 60%;
+    margin-left: 40%;
+    z-index: 1;
+  }
+  #main .qa .wrapper ul li {
+    padding: 0;
+  }
+  #main .qa .wrapper ul li p {
+    font-size: 1.5rem;
+  }
+  #main .qa .wrapper ul li button {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  #main header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #main header p {
+    margin-left: 1rem;
+    width: 40%;
+    font-size: 1.5rem;
+  }
+  #main header p .br::before {
+    content: "\A";
+    white-space: pre;
+  }
+  #main header .normal {
+    display: none;
+  }
+  #main header .sp {
+    display: block;
+    margin-right: 1rem;
+    width: 50%;
+    text-align: right;
+    position: relative;
+  }
+  #main header .sp #open {
+    border: none;
+    background: rgba(255, 255, 255, 0);
+    font-size: 3rem;
+  }
+  #main header .sp .sp-header {
+    display: none;
+    background: #fff;
+    padding: 1rem;
+    width: 50%;
+    border: 2px solid #333;
+    text-align: left;
+    position: absolute;
+    top: 0;
+    left: 25%;
+  }
+  #main header .sp .sp-header .batu {
+    text-align: right;
+  }
+  #main header .sp .sp-header #close {
+    border: none;
+    background: #fff;
+    font-size: 2rem;
+  }
+  #main header .sp .sp-header li {
+    margin-bottom: 0.5rem;
+  }
+  #main .top p .br::before {
+    content: "\A";
+    white-space: pre;
+  }
+  #main .top .ohayo {
+    width: 90%;
+    top: 45%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+  }
+  #main .top .nature {
+    width: 70%;
+    top: 65%;
+    left: 30%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+  }
+  #main .top .lose {
+    width: 70%;
+    top: 75%;
+    left: 60%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    z-index: 0;
+  }
+  #main .profile .wrapper img {
+    width: 100%;
+    height: auto;
+  }
+  #main .profile .wrapper ul {
+    padding: 0;
+  }
+  #main .profile .wrapper ul li p {
+    font-size: 1.2rem;
+  }
+  #main .profile .wrapper ul li .right {
+    padding-right: 1rem;
+  }
+  #main .profile .wrapper ul li .right a {
+    font-size: 1.2rem;
+  }
+  #main .content .wrapper {
+    position: static;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  #main .content .wrapper .left {
+    position: static;
+    top: 0;
+    width: 90%;
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+  }
+  #main .content .wrapper .right {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin: 0 0.5rem;
+  }
+  #main .content .wrapper .right .b p {
+    font-size: 1.2rem;
+  }
+  #main .qa .wrapper {
+    width: 90%;
+  }
+  #main .contact .wrapper form {
+    width: 90%;
+  }
+  #main .contact .wrapper .popup {
+    width: 80%;
+  }
+  #main footer {
+    height: 400px;
+  }
+  #main footer ul {
+    margin-top: 3rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    height: 400px;
+  }
+  #main footer ul li {
+    margin-bottom: 1rem;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
