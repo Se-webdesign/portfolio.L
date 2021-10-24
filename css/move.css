@@ -154,4 +154,8 @@ svg {
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
 }
+
+#rain {
+  width: 100%;
+}
 /*# sourceMappingURL=move.css.map */
